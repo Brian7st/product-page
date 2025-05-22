@@ -59,7 +59,7 @@ a:hover{
     color: white;
 }
 .divFondoImg {
-    background-image: url(/assets/hojasFondo.jpg);
+    background-image: url(assets/hojasFondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
