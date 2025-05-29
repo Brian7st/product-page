@@ -52,12 +52,15 @@ a:hover{
 
 .divContaONe1 h2{
     margin: 0;
-    font-size: 5.5rem;
+    font-size: 6em;
     color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .divContaONe1 p{
-    font-size: 1.3rem;
+    font-size: 1.6em;
     color: white;
+    margin-bottom: 40px;
 }
 .divFondoImg {
     background-image: url(/assets/hojasFondo.jpg);
@@ -75,17 +78,17 @@ a:hover{
     left: 190px;
 }
 
-.contenedorButton{
+.colorBorder{
     border: 1px solid white;
-    height: 5vh;
-    width: 13vw;
+    height: 6vh;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 7px;
 }
 .button1 {
     padding: 12px 15px;
-    margin-left: 6px;
     border-radius: 5px;
     border: none;
     color: #f03f99;
@@ -100,7 +103,7 @@ a:hover{
 .titulo{
     display: flex;
     justify-content: center;
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bold;
     margin: 0 0 3rem 0;
     color: #f41486;
@@ -119,18 +122,18 @@ a:hover{
 }
 
 .containertwoDiv {
-    margin-left: 4rem;
+    margin-left: 5rem;
     margin-top: -6rem;
 }
 .containertwoDiv p{
-    font-size: 1.6rem;
+    font-size: 1.2em;
     width: 22vw;
     color: #555;
 
 }
 #titulo2{
-    margin: 0 0 3rem 0;
-    font-size: 4rem;
+    margin: 0 0 1rem 0;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 1.3px;
 }
@@ -139,27 +142,31 @@ a:hover{
 }
 .containertwoDiv h2{
     color: #c76699;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .features-box li {
-    margin-bottom: 10px;
-    font-size: 1.7rem;
+    font-size: 1.4em;
     color: #555;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container h2{
-    font-size: 7rem;
+    font-size: 4em;
     color: #ffffff;
     text-align: center;
     margin: 5rem 0;
 }
 .container p{
-    font-size: 1.5rem;
+    font-size: 1.2em;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 7rem;
-    width: 120%;
+    margin-bottom: 2em;
+    width: 90%;
 }
 
 
@@ -172,28 +179,37 @@ a:hover{
 }
 
 .plans-container {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+     display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 40px auto;
 }
 
 .plan {
     background: white;
     border-radius: 10px;
-    width: 25vw;
-    height: 95vh;
+    width: 22vw;
+    height: 89vh;
     padding: 30px 0px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+.plan:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+  transform: translateY(-5px); 
+  transition: all 0.3s ease; 
+}
+
 
 .plan img {
-    width: 150px;
+    width: 100px;
     margin-bottom: 20px;
 }
 
 .plan h3 {
-    font-size: 3rem;
+    font-size: 2.5em;
     margin-bottom: 15px;
     color: #333;
 }
@@ -203,7 +219,7 @@ a:hover{
     align-items: center;
     margin: 0 0 40px 0;
     background-color: #f5f5f5;
-    padding: 20px 3px;
+    padding: 5px 3px;
 }
 
 .price {
@@ -212,11 +228,11 @@ a:hover{
     gap: 5px;
 }
 .amount {
-    font-size: 5rem;
+    font-size: 3em;
     color: #222;
 }
 .label {
-    font-size: 2rem;
+    font-size: 1em;
     color: #555;
     margin-top: 6px;
 }
@@ -237,11 +253,11 @@ a:hover{
     margin-bottom: 12px;
     position: relative;
     color: #555;
-    font-size: 1.7rem;
+    font-size: 1.3em;
 }
 
 .plan p {
-    font-size: 1.9rem;
+    font-size: 1.4em;
     color: #777;
     margin: 15px 0;
     width: 85%;
@@ -257,8 +273,8 @@ a:hover{
 }
 
 .button {
-    padding: 30px 50px;
-    font-size: 1.8rem;
+    padding: 25px 40px;
+    font-size: 1em;
     border-radius: 25px;
     color: white;
     font-weight: bold;
@@ -286,5 +302,22 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 6vh;
 }
-.footer-logos
+.footerTextColor{
+    color: #f03f99;
+}
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.footerA:hover{
+    color: #296cd5;
+}
