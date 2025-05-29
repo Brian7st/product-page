@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Document</title>
+    
 </head>
 <body>
 <header>
@@ -19,7 +21,7 @@
             <a href="#" class="button_a" >Download</a>
 </header>
 <section class="containerOne">
-        <div class="divContaONe">
+    <div class="divContaONe">
         <div class="divContaONe1">
             <h2>Product <br> Page</h2>
             <p>We built this template to help you create modern <br> and beautiful marketing page.</p>
@@ -32,7 +34,7 @@
         </div>
     </div>
     <div class="divFondoImg">
-         <img src="assets/phone.png" alt="">
+        <img src="assets/phone.png" alt="">
     </div>
 </section>
 <section class="containertwo">
@@ -40,67 +42,109 @@
     <div class="divcontainertwo">
         <div><img src="assets/laptop.png" alt=""></div>
         <div class="containertwoDiv">
-            <h2>Alpha Screenshot</h2>
+            <h2 id="titulo2">Alpha Screenshot</h2>
             <p>
                 This is a placeholder text. Replace it with your awesome call to action text. Develop stunning product website easily with this template. 
             </p>
-            <h3>-Marketing Page </h3>
-            <ul class="list-group">
-                <li class="list-group-item">
-                <i class="fas fa-check-circle mr-2"></i>Based on Bootstrap 4 </li>
-                <li class="list-group-item">Based on Bootstrap 4 </li>
-                <li class="list-group-item">Modern and creative </li>
-                <li class="list-group-item">Optimized for mobile devices</li>
+            <div class="features-box">
+            <h2>― Marketing Page</h2>
+            <ul class="list-unstyled">
+                <li><i class="far fa-check-circle text-pink mr-2"></i> Based on Bootstrap 4</li>
+                <li><i class="far fa-check-circle text-pink mr-2"></i> Modern and creative</li>
+                <li><i class="far fa-check-circle text-pink mr-2"></i> Optimized for mobile devices</li>
             </ul>
+            </div>
         </div>
     </div>
 </section>
 <div class="pricing-plans">
-            <div class="plan">
+    <div class="container">
+        <h2 class="title">plans & pricing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis assumenda quisquam esse amet quam inventore officia animi corrupti unde? Consequuntur nobis esse recusandae ex a obcaecati laboriosam porro illum? Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi blanditiis quaerat fugiat nihil tempora saepe, eligendi aperiam perspiciatis culpa atque nam, nisi consectetur nostrum esse rerum error nulla. Dicta, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente facere quo rerum nesciunt molestias ipsam esse ipsa exercitationem iste ipsum quibusdam vero sed sint, pariatur officiis, reprehenderit repellat aspernatur ducimus.</p>
+    </div>
+    <div class="plans-container">
+        <div class="plan">
+            <img src="assets/hoja.png" alt="">
                 <h3>Lite</h3>
-                <div class="price">$0 <small>Free</small></div>
+                <div class="price-container">
+                    <div class="price">
+                        <span class="amount">$0</span>
+                        <span class="label">Free</span>
+                    </div>
+                </div>
                 <ul>
-                    <li>Full Components</li>
-                    <li>Future Updates</li>
-                    <li>Documentation</li>
-                    <li>Customer Support</li>
-                    <li>Cost Option</li>
+                    <li><i class="fas fa-star text-pink iconos"></i>Full Components</li>
+                    <li><i class="fas fa-check text-pink iconos"></i>Future Updates</li>
+                    <li><i class="fas fa-check text-pink iconos"></i>Documentation</li>
+                    <li><i class="fas fa-check text-pink iconos"></i>Customer Support</li>
+                    <li><i class="fas fa-times  iconos"></i>Cost Option</li>
                 </ul>
                 <p>Nulla vel metus sedentique ante vehiculam. Cras purus odio, vestibulum in vulputate at, tempus viverra surpis.</p>
-                <a href="#" class="button">Subscribe Now</a>
+            <div class="button-container">
+                    <a href="#" class="button">Subscribe Now</a>
             </div>
-            
+                </div>
             <div class="plan">
+                <img src="assets/nube.png" alt="">
                 <h3>Standard</h3>
-                <div class="price">$24 <small>per month</small></div>
+                <div class="price-container">
+                    <div class="price">
+                        <span class="amount">$24</span>
+                        <span class="label">per month</span>
+                    </div>
+                </div>
                 <ul>
-                    <li>Full Components</li>
-                    <li>Future Updates</li>
-                    <li>Documentation</li>
-                    <li>Customer Support</li>
-                    <li>Cost Option</li>
+                    <li><i class="fas fa-star  iconos"></i>Full Components</li>
+                    <li><i class="fas fa-check iconos"></i>Future Updates</li>
+                    <li><i class="fas fa-check iconos"></i>Documentation</li>
+                    <li><i class="fas fa-check iconos"></i>Customer Support</li>
+                    <li><i class="fas fa-times  iconos"></i>Cost Option</li>
                 </ul>
                 <p>Nulla vel metus sedentique ante vehiculam. Cras purus odio, vestibulum in vulputate at, tempus viverra surpis.</p>
-                <a href="#" class="button">Subscribe Now</a>
+            <div class="button-container">
+                    <a href="#" class="button">Subscribe Now</a>
+            </div>
             </div>
             
             <div class="plan">
+                <img src="assets/maletin.png" alt="">
                 <h3>Ultimate</h3>
-                <div class="price">$400 <small>per user year</small></div>
+                <div class="price-container">
+                    <div class="price">
+                        <span class="amount">$400</span>
+                        <span class="label">per user year</span>
+                    </div>
+                </div>
                 <ul>
-                    <li>Full Components</li>
-                    <li>Future Updates</li>
-                    <li>Documentation</li>
-                    <li>Customer Support</li>
-                    <li>Cost Option</li>
+                    <li><i class="fas fa-star iconos"></i>Full Components</li>
+                    <li><i class="fas fa-check iconos"></i>Future Updates</li>
+                    <li><i class="fas fa-check iconos"></i>Documentation</li>
+                    <li><i class="fas fa-check iconos"></i>Customer Support</li>
+                    <li><i class="fas fa-times  iconos"></i>Cost Option</li>
                 </ul>
                 <p>Nulla vel metus sedentique ante vehiculam. Cras purus odio, vestibulum in vulputate at, tempus viverra surpis.</p>
-                <a href="#" class="button">Subscribe Now</a>
+                <div class="button-container">
+                    <a href="#" class="button">Subscribe Now</a>
+            </div>
             </div>
         </div>
+    </div>
     </section>
     <footer class="footer">
-        <p>Website made by black - contact@address.com</p>
+        <div>
+            <p>© Website made by black - contact@address.com</p>
+        </div>
+        <div>
+            <div class="footer-logo">
+                <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </div>
+            </ul>
+        </div>
+        
     </footer>
 
 </body>
