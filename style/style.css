@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
 }
 
 :root {
@@ -41,7 +45,7 @@
     /* Tamaños de texto (clamp) */
     --text-xs: clamp(0.5rem, 1vw, 0.8rem);
     --text-sm: clamp(0.8rem, 1.2vw, 1rem);
-    --text-md: clamp(1rem, 1.5vw, 1.5rem);
+    --text-md: clamp(0.8rem, 1.5vw, 1.5rem);
     --text-lg: clamp(1.5rem, 2vw, 2rem);
     --text-xl: clamp(2rem, 3vw, 3rem);
     --text-xxl: clamp(3rem, 6vw, 6.5rem);
@@ -59,11 +63,6 @@
     --border-radius-md: 10px;
     --border-radius-lg: 25px;
 
-    --breakpoint-mobile: 480px;
-    --breakpoint-tablet: 768px;
-    --breakpoint-desktop: 920px;
-    --breakpoint-large: 1279px;
-
 }
 
 header {
@@ -72,11 +71,14 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+.divHeader{
+        display: flex;
+        gap: 1.5rem;
+    }
 
 a {
     text-decoration: none;
     color: var(--color-letra-grisMedio);
-    margin-left: var(--space-md);
 }
 
 a:hover {
@@ -339,10 +341,11 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: auto;
+    padding: 5px 0px 2px 0px;
 }
 
 .button {
-    padding: 1.5rem 2.5rem;
+    padding: 0.9rem 2rem;
     font-size: var(--text-md);
     border-radius: var(--border-radius-lg);
     color: var(--color-blanco);
@@ -393,7 +396,87 @@ footer p {
     color: var(--color-footer-hover);
 }
 
-@media(max-width:var(--breakpoint-desktop)){
-    
+
+@media(max-width:920px){
+    .divFondoImg img {
+        width: min(100%, 25vw);
+    }
+    .iconos{
+        left: 35px;
+    }
 }
-    .iconos 
+
+@media(max-width:768px){
+    .divHeader{
+        gap: 0.6rem;
+    }
+    a{
+        font-size: clamp(0.8rem, 1.2vw,1.5rem);
+    }
+    .button_a{
+        padding: 7px;
+    }
+    .containerOne{
+        height: 45vh;
+    }
+    .colorBorder{
+        padding: 0.3rem 0.4rem;
+    }
+    .divContaONe1 h2 {
+        font-size: clamp(2.5rem,3vw,3rem);
+    }
+    .divContaONe1 p{
+        font-size: clamp(0.8rem, 1.2vw,1.5rem);
+    }
+
+    .button1{
+       padding: 4px 5px;
+        font-size: clamp(0.7rem, 1.2vw,1.5rem);
+    }
+    .button2{
+        padding: 4px 5px;
+        font-size: clamp(0.7rem, 1.2vw,1.5rem);
+    }
+    .divFondoImg img{
+        margin-left: 4rem;
+    }
+    .containertwo{
+        gap: 1rem;
+    }
+    .container h2 {
+        margin: 2rem 0;
+    }
+    .plan h3 {
+        font-size: clamp(2rem,2vw,2rem);
+    }
+    .plan p{
+        font-size: clamp(1rem,2vw,2rem);
+    }
+    .amount {
+        font-size: clamp(2.5rem, 3.5vw, 3rem);
+    }
+
+    .label {
+        font-size: clamp(1rem, 2vw, 2rem) ;
+
+    }
+    .iconos{
+        left: 6rem;
+    }
+    .plan ul li {
+        font-size: clamp(1.3rem,1.5vw,3rem);
+    }
+    .plans-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width:480px){
+
+    .imagen{
+        width: 0.2vw;
+    }
+
+
+
+}
