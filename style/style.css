@@ -190,6 +190,11 @@ a:hover {
     color: var(--color-letra-rosado);
 }
 
+.Animacion:hover{
+    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
+    transition: var(--transition-normal);
+}
 .button2 {
     font-size: var(--text-md);
     padding: var(--button2-padding-desktop);
@@ -293,11 +298,6 @@ a:hover {
     text-align: center;
 }
 
-.plan:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-5px);
-    transition: var(--transition-normal);
-}
 
 .plan img {
     width: min(100%, var(--plan-img-width-desktop));
@@ -411,18 +411,18 @@ footer p {
     margin: 0;
     font-size: var(--footer-p-fontsize-desktop);
 }
+
     .footer-logo ul{
         display: flex;
         gap: var(--footer-logo-gap-desktop);
     }
-
+    
 .social-icons {
     list-style: none;
     display: flex;
     align-items: center;
     margin-top: 7%;
 }
-
 .footerA:hover {
     color: var(--color-footer-hover);
 }
@@ -459,7 +459,6 @@ footer p {
         color: var(--color-blanco);
         font-weight: bold;
     }
-
     .divContaONe1 p{
         font-size: clamp(0.7rem, 1.2vw,1.5rem);
     }
@@ -490,10 +489,8 @@ footer p {
     .amount {
         font-size: clamp(1.8rem, 3.5vw, 3rem);
     }
-
     .label {
         font-size: clamp(0.8rem, 2vw, 2rem) ;
-
     }
     .iconos{
         left: var(--iconos-left-tablet);
@@ -514,7 +511,6 @@ footer p {
 }
 
 @media(max-width:480px){
-
     .divFondoImg{
         display: none;
     }
