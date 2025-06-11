@@ -430,7 +430,7 @@ footer p {
     }
 
     .button1{
-       padding: 4px 5px;
+    padding: 4px 5px;
         font-size: clamp(0.7rem, 1.2vw,1.5rem);
     }
     .button2{
