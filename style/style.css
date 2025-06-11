@@ -157,7 +157,7 @@ a:hover {
 }
 
 .divFondoImg {
-    background-image: url(../assets/hojasFondo.jpg);
+    background-image: url(assets/hojasFondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
@@ -544,4 +544,6 @@ footer p {
     }
     .footer-logo ul{
         display: flex;
-        gap: var(--footer-logo-gap-mobi
+        gap: var(--footer-logo-gap-mobile);
+    }
+}
