@@ -86,7 +86,7 @@ p{
     --button2-padding-desktop: var(--padding-button);
     --button2-padding-tablet: 4px 5px;
     --button2-padding-mobile: 3px 4px;
-    --imagen-width-mobile: 27vw;
+    --imagen-width-mobile: 26vw;
     --divcontainertwo-gap-tablet: 1rem;
     --divcontainertwo-gap-mobile: 1rem;
 }
@@ -442,10 +442,10 @@ footer p {
         gap:0.6rem;
     }
     .divHeader a{
-        font-size: clamp(0.5rem, 2vw,2.5rem);
+        font-size: clamp(0.7rem, 2vw,2.5rem);
     }
     .button_a{
-        padding: clamp(0.2rem, 1.2vw, 1rem) 1.5rem;
+        padding: 0.2rem;
     }
     .containerOne{
         height: 45vh;
